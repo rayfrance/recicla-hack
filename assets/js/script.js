@@ -5,6 +5,6 @@ searchButton.addEventListener('click', () => {
   alert(inputValue);
 });
 
-function mostraPapel(){
-  $("#show").load("p");
+function mostraPapel() {
+  document.getElementById("showPapel").style.display = "block";
 }
