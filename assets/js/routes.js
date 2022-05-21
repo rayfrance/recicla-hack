@@ -13,3 +13,7 @@ function mudaCadastroColetor(){
     $("#closeLogin").click();
     $("#bodyClick").click();
 }
+}
+function comoDescartar(){
+    $("#content").load("pages/descartar.html");
+}

@@ -53,3 +53,17 @@ function consultarCepAjax() {
       }
     });
   }
+
+function mostraPapel() {
+  document.getElementById("showPapel").style.display = "block";
+}
+function mostraPlastico() {
+  document.getElementById("showPlastico").style.display = "block";
+}
+function mostraMetal() {
+  document.getElementById("showMetal").style.display = "block";
+}
+function mostraVidro() {
+  document.getElementById("showVidro").style.display = "block";
+}
+
