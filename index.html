@@ -11,12 +11,32 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="assets/css/form-validation.css"> -->
+    <!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+<!-- Nucleo Icons -->
+<link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+<link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- CSS Files
+<link id="pagestyle" href="./assets/css/material-kit.css?v=3.0.2" rel="stylesheet" /> -->
 
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/login-register.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -31,14 +51,21 @@
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
                 </button>
-                <a href="http://www.creative-tim.com" class="navbar-brand">
+                <!-- Espaço para logo -->
+                <!-- <a href="http://www.creative-tim.com" class="navbar-brand">
                     Gaia - Free Demo
-                </a>
+                </a> -->
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a href="http://www.creative-tim.com/product/gaia-bootstrap-template-pro" target="_blank">Get PRO Version</a>
+                        <a href="#" target="_blank">Cooperativas</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Coletores</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Chat</a>
                     </li>
                     <li class="dropdown">
                         <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
@@ -53,18 +80,17 @@
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
-                                
                             </li>
                         </ul>
                     </li>
-                    <!-- modal login -->
                     <li>
+
                         <!-- <a href="" class="btn btn-danger btn-fill">Entrar</a> -->
-                        <div class="container">
+                        <div class="container fa">
                             <div class="row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-4">
-                                     <a class="btn btn-danger btn-fill" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a>                                
+                                     <a class="btn btn-danger btn-fill" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Entrar</a>                                
                                 <div class="col-sm-4"></div>
                             </div>
                     
@@ -73,8 +99,8 @@
                                   <div class="modal-dialog login animated">
                                       <div class="modal-content">
                                          <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title">Login with</h4>
+                                            <button type="button" class="close" id="closeLogin" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Entrar com</h4>
                                         </div>
                                         <div class="modal-body">
                                             <div class="box">
@@ -92,15 +118,15 @@
                                                     </div>
                                                     <div class="division">
                                                         <div class="line l"></div>
-                                                          <span>or</span>
+                                                          <span>Ou</span>
                                                         <div class="line r"></div>
                                                     </div>
                                                     <div class="error"></div>
                                                     <div class="form loginBox">
                                                         <form method="" action="" accept-charset="UTF-8">
                                                         <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                                        <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                                        <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                                        <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                                        <input class="btn btn-default btn-login" type="button" value="Entrar" onclick="loginAjax()">
                                                         </form>
                                                     </div>
                                                  </div>
@@ -110,9 +136,9 @@
                                                  <div class="form">
                                                     <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
                                                     <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                                    <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                                                    <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repita a senha" name="password_confirmation">
+                                                    <input class="btn btn-default btn-register" type="button" value="Criar conta" onclick="mudaCadastro()" name="commit">
                                                     </form>
                                                     </div>
                                                 </div>
@@ -120,19 +146,21 @@
                                         </div>
                                         <div class="modal-footer">
                                             <div class="forgot login-footer">
-                                                <span>Looking to
-                                                     <a href="javascript: showRegisterForm();">create an account</a>
+                                                <span>Gostaria de 
+                                                     <a href="javascript: showRegisterForm();">criar uma conta</a>
                                                 ?</span>
                                             </div>
                                             <div class="forgot register-footer" style="display:none">
-                                                 <span>Already have an account?</span>
-                                                 <a href="javascript: showLoginForm();">Login</a>
+                                                 <span>Já tem uma conta?</span>
+                                                 <a href="javascript: showLoginForm();">Entrar</a>
                                             </div>
                                         </div>
                                       </div>
                                   </div>
                               </div>
                         </div>
+
+
                     </li>
                 </ul>
             </div>
@@ -140,19 +168,33 @@
         </div>
     </nav>
 
+<div id="content">
 
     <div class="section section-header">
-        <div class="parallax filter filter-color-red">
+        <div class="parallax">
+            <!-- <div class="image"
+                style="background-image: url('assets/img/Desktop-4.png')">
+            </div> -->
             <div class="image"
-                style="background-image: url('assets/img/header-1.jpeg')">
+                style="background-color: #FE7F71 ;">
             </div>
-            <div class="container">
+            <div class="container navInicial">
                 <div class="content">
                     <div class="title-area">
-                        <p>Free Demo</p>
+                        
                         <h1 class="title-modern">Gaia</h1>
-                        <h3>Probably the most stylish bootstrap template in the world!</h2>
-                        <div class="separator line-separator">♦</div>
+                        <h3>Falta pouco para reciclar seus resíduos! </h2>
+                            
+                            <div class="input-group">
+                                <div class="form-outline">
+                                  <input id="search-focus" type="search" id="form1" class="form-control" />
+                                  <label class="form-label" for="form1"></label>
+                                </div>
+                                <button type="button" class="btn btn-primary">
+                                    <span class="material-icons"> search </span>
+                                </button>
+                              </div>
+                              
                     </div>
 
                     <div class="button-get-started">
@@ -169,6 +211,50 @@
 
     <div class="section">
         <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="info-horizontal bg-gradient-primary border-radius-xl d-block d-md-flex p-4">
+                  <i class="material-icons text-white text-3xl">place</i>
+                  <div class="ps-0 ps-md-3 mt-3 mt-md-0">
+                    <h5 class="text-white">Onde descartar?</h5>
+                    <p class="text-white">Se informe sobre os pontos de coletas mais próximos de você.</p>
+                    <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" class="text-white icon-move-right">
+                      Veja mais
+                      <i class="fas fa-arrow-right text-sm ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 px-lg-1 mt-lg-0 mt-4">
+                <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4 h-100">
+                  <i class="material-icons text-gradient text-primary text-3xl">done_outline</i>
+                  <div class="ps-0 ps-md-3 mt-3 mt-md-0">
+                    <h5>Como descartar?</h5>
+                    <p>Saiba tudo sobre o descarte correto de cada tipo de material.</p>
+                    <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit" class="text-primary icon-move-right">
+                      Veja mais
+                      <i class="fas fa-arrow-right text-sm ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-4 mt-lg-0 mt-4">
+                <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4">
+                  <i class="material-icons text-gradient text-primary text-3xl">contact_support</i>
+                  <div class="ps-0 ps-md-3 mt-3 mt-md-0">
+                    <h5>Fale com a cooperativa</h5>
+                    <p>Entre em contato direto com a cooperativa e tire suas dúvidas.</p>
+                    <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit" class="text-primary icon-move-right">
+                      Veja mais
+                      <i class="fas fa-arrow-right text-sm ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- <div class="container">
             <div class="row">
                 <div class="title-area">
                     <h2>Our Services</h2>
@@ -205,14 +291,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
 
     <div class="section section-our-team-freebie">
         <div class="parallax filter filter-color-black">
-            <div class="image" style="background-image:url('assets/img/header-2.jpeg')">
-            </div>
+            <!-- <div class="image" style="background-image:url('assets/img/header-2.jpeg')">
+            </div> -->
             <div class="container">
                 <div class="content">
                     <div class="row">
@@ -460,7 +546,7 @@
             </div>
         </div>
     </footer>
-
+</div>
 </body>
 
 <!--   core js files    -->
@@ -476,11 +562,18 @@
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        openLoginModal();
-        console.log("dasfgiohuyaqwpo8gihqpioerwsgh");
-    });
+
 </script>
 <script src="assets/js/login-register.js"></script>
+<script src="assets/js/script.js"></script>
+<script type="text/javascript">
+    // $(document).ready(function(){
+    //     openLoginModal();
+    //     console.log("dasfgiohuyaqwpo8gihqpioerwsgh");
+    // });
+</script>
+<script src="assets/js/login-register.js"></script>
+<script src="./assets/js/routes.js"></script>
+<script src="./assets/js/form-validation.js"></script>
+
 </html>
