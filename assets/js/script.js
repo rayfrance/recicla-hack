@@ -4,3 +4,7 @@ searchButton.addEventListener('click', () => {
   const inputValue = searchInput.value;
   alert(inputValue);
 });
+
+function mostraPapel(){
+  $("#show").load("p");
+}
