@@ -41,3 +41,16 @@
     justify-content: center;
     align-items: center;
 }
+
+#showPapel{
+    display: none;
+}
+#showPlastico{
+    display: none;
+}
+#showMetal{
+    display: none;
+}
+#showVidro{
+    display: none;
+}
