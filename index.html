@@ -11,6 +11,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="assets/css/form-validation.css"> -->
     <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 
@@ -73,7 +74,83 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://www.creative-tim.com/product/gaia-bootstrap-template" class="btn btn-danger btn-fill">Free Download</a>
+
+                        <!-- <a href="" class="btn btn-danger btn-fill">Entrar</a> -->
+                        <div class="container fa">
+                            <div class="row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4">
+                                     <a class="btn btn-danger btn-fill" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Entrar</a>                                
+                                <div class="col-sm-4"></div>
+                            </div>
+                    
+                    
+                             <div class="modal fade login" id="loginModal">
+                                  <div class="modal-dialog login animated">
+                                      <div class="modal-content">
+                                         <div class="modal-header">
+                                            <button type="button" class="close" id="closeLogin" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Entrar com</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="box">
+                                                 <div class="content">
+                                                    <div class="social">
+                                                        <a class="circle github" href="#">
+                                                            <i class="fa fa-github fa-fw"></i>
+                                                        </a>
+                                                        <a id="google_login" class="circle google" href="#">
+                                                            <i class="fa fa-google-plus fa-fw"></i>
+                                                        </a>
+                                                        <a id="facebook_login" class="circle facebook" href="#">
+                                                            <i class="fa fa-facebook fa-fw"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="division">
+                                                        <div class="line l"></div>
+                                                          <span>Ou</span>
+                                                        <div class="line r"></div>
+                                                    </div>
+                                                    <div class="error"></div>
+                                                    <div class="form loginBox">
+                                                        <form method="" action="" accept-charset="UTF-8">
+                                                        <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                                        <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                                        <input class="btn btn-default btn-login" type="button" value="Entrar" onclick="loginAjax()">
+                                                        </form>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="content registerBox" style="display:none;">
+                                                 <div class="form">
+                                                    <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                                    <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repita a senha" name="password_confirmation">
+                                                    <input class="btn btn-default btn-register" type="button" value="Criar conta" onclick="mudaCadastro()" name="commit">
+                                                    </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="forgot login-footer">
+                                                <span>Gostaria de 
+                                                     <a href="javascript: showRegisterForm();">criar uma conta</a>
+                                                ?</span>
+                                            </div>
+                                            <div class="forgot register-footer" style="display:none">
+                                                 <span>Já tem uma conta?</span>
+                                                 <a href="javascript: showLoginForm();">Entrar</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+
+
                     </li>
                 </ul>
             </div>
@@ -81,6 +158,7 @@
         </div>
     </nav>
 
+<div id="content">
 
     <div class="section section-header">
         <div class="parallax filter filter-color-red">
@@ -196,8 +274,8 @@
 
     <div class="section section-our-team-freebie">
         <div class="parallax filter filter-color-black">
-            <div class="image" style="background-image:url('assets/img/header-2.jpeg')">
-            </div>
+            <!-- <div class="image" style="background-image:url('assets/img/header-2.jpeg')">
+            </div> -->
             <div class="container">
                 <div class="content">
                     <div class="row">
@@ -445,7 +523,7 @@
             </div>
         </div>
     </footer>
-
+</div>
 </body>
 
 <!--   core js files    -->
@@ -461,4 +539,14 @@
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
 
+
+<script type="text/javascript">
+    // $(document).ready(function(){
+    //     openLoginModal();
+    //     console.log("dasfgiohuyaqwpo8gihqpioerwsgh");
+    // });
+</script>
+<script src="assets/js/login-register.js"></script>
+<script src="./assets/js/routes.js"></script>
+<script src="./assets/js/form-validation.js"></script>
 </html>
