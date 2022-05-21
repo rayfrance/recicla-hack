@@ -1,0 +1,22 @@
+.input-group{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header .btn{
+    color: white;
+    background-color: #FE7F71;
+}
+
+.navbar-collapse{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
