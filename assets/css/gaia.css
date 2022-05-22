@@ -949,7 +949,7 @@ a,
 .section {
   padding: 50px 0;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: ##f4f7f1;
 }
 
 .section-gray {
@@ -966,7 +966,7 @@ a,
 }
 .section .title-area {
   max-width: 760px;
-  margin: 0 auto 70px;
+  margin: 0 auto 20px;
   display: block;
   padding: 0 15px;
   text-align: center;
