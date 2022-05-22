@@ -124,6 +124,9 @@
 .title-area{
     margin-bottom: 0px !important;
 }
+.tituloCoo{
+    margin-bottom: 30px !important;
+}
 
 .location{
     display: flex;
@@ -131,4 +134,12 @@
     align-content: center;
     justify-content: center;
     align-items: stretch;
+}
+
+.nomeCoo .materiaisCoo{
+    margin-bottom: 5px !important;
+}
+
+.description{
+    margin-bottom: 0px !important;
 }
