@@ -30,3 +30,7 @@ function mudaSolicitarColeta(){
     $("#content").load("pages/solicitarColeta.html");
 
 }
+function mudaColetaAgendada(){
+    $("#content").load("pages/coletaAgendada.html");
+
+}
