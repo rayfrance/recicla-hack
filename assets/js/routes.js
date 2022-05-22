@@ -41,7 +41,18 @@ function mudaContato(){
     $("#content").load("pages/contato.html");
 
 }
+
+function abrirPontuacao(){
+    $("#content").load("pages/pontuacao.html");
+
+}
+function abrirChat(){
+    $("#content").load("pages/chat.html");
+
+}
+function abrirConvidarAmigos(){
+    $("#content").load("pages/convidarAmigos.html");
+}
 function mudaMinhasContribuicoes(){
     $("#content").load("pages/minhasContribuicoes.html");
-
 }
