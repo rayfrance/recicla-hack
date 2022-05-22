@@ -54,3 +54,81 @@
 #showVidro{
     display: none;
 }
+
+#showPapel2{
+    display: none;
+}
+#showPlastico2{
+    display: none;
+}
+#showMetal2{
+    display: none;
+}
+#showVidro2{
+    display: none;
+}
+
+.navbar.navbar-fixed-top {
+    background-color: #77937A;
+}
+/* .materiais{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} */
+
+/* @media screen and (max-width: 768px) {
+    .materiais{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .input-group{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.form-control{
+    font-size: 28px;
+}
+    
+
+.contact{
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px !important;
+}
+.contact2 {
+    display: contents;
+}
+
+.card-body{
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+.title-area{
+    margin-bottom: 0px !important;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}

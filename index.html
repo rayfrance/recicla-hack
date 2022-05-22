@@ -11,6 +11,8 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/bootstrap-datepicker.css">
     <!-- <link rel="stylesheet" href="assets/css/form-validation.css"> -->
     <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -68,53 +70,21 @@
                     </li>
                     <li class="dropdown">
                         <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-share-alt"></i> Share
+                            <i class="fa fa-share-alt"></i> Compartilhar
                         </a>
                         <ul class="dropdown-menu dropdown-danger">
                             <li>
-                                <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=bota o link do site aq"><i class="fa fa-facebook-square"></i> Facebook</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
-                            </li>
-                        </ul>
-                    </li>
-<!-- botão de alguém que acabou de logar ( dropdown) -->
-<li id="pessoaLogada" style="list-style-type: none;color: white;" class="dropdown">
-                        <a style="color: white;" href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa" ></i> Maria
-                        </a>
-                        <ul class="dropdown-menu dropdown-danger">
-                            <li>
-                                <a href="#"><span class="material-icons">star</span><i class="fa"></i> Pontuação </a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">volunteer_activism</span><i class="fa"></i> Minhas doações</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">verified_user</span><i class="fa"></i> Portal de Segurança</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">settings</span><i class="fa"></i> Configurações</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">info</span><i class="fa"></i> Informações</a>
+                                <a href="https://twitter.com/intent/tweet?url=[URL]&text=[TEXTO-DO-TWEET]&via=[NOME-DE-USUARIO-DO-TWITTER]&hashtags=[LISTA-DE-HASHTAGS]"><i class="fa fa-twitter"></i> Twitter</a>
                             </li>
                         </ul>
                     </li>
                     <li>
 
                         <!-- <a href="" class="btn btn-danger btn-fill">Entrar</a> -->
-                        <div class="container fa">
+                        <div class="container fa col-6">
                             <div class="row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-4">
@@ -196,6 +166,35 @@
 
 
                     </li>
+<!-- botão de alguém que acabou de logar ( dropdown) -->
+<li id="pessoaLogada" style="list-style-type: none;color: white;" class="dropdown col">
+                        <span style="color: white;float: right;" href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa" ></i> Maria
+                        </span>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="#"><span class="material-icons">star</span><i class="fa"></i> Pontuação </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">volunteer_activism</span><i class="fa"></i> Minhas contribuições</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
+                            </li>
+                            <li>
+                                <a href="whatsapp://send?text=<?php urlencode('Olá, vamos começar a reciclar? Visite o reciclahack')?>"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">verified_user</span><i class="fa"></i> Portal de Segurança</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">settings</span><i class="fa"></i> Configurações</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">info</span><i class="fa"></i> Informações</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             <!-- /.navbar-collapse -->
         </div>
@@ -205,12 +204,12 @@
 
     <div class="section section-header">
         <div class="parallax">
-            <!-- <div class="image"
-                style="background-image: url('assets/img/Desktop-4.png')">
-            </div> -->
             <div class="image"
-                style="background-color: #77937A ;">
+                style="background-image: url('assets/img/foto_Fundo.png')">
             </div>
+            <!-- <div class="image"
+                style="background-color: #77937A ;">
+            </div> -->
             <div class="container navInicial">
                 <div class="content">
                     <div class="title-area">
@@ -223,7 +222,7 @@
                                   <input id="search-focus" type="search" id="form1" class="form-control" />
                                   <label class="form-label" for="form1"></label>
                                 </div>
-                                <button type="button" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary" style="background-color: #77937A;">
                                     <span class="material-icons"> search </span>
                                 </button>
                               </div>
@@ -247,7 +246,7 @@
                     <div class="ps-0 ps-md-3 mt-3 mt-md-0">
                       <h5 class="text-white">Onde descartar?</h5>
                       <p class="text-white">Se informe sobre os pontos de coletas mais próximos de você.</p>
-                      <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" class="text-white icon-move-right">
+                      <a onclick="mudaCooperativas()" class="text-white icon-move-right">
                         Veja mais
                         <i class="fas fa-arrow-right text-sm ms-1"></i>
                       </a>
@@ -260,7 +259,7 @@
                     <div class="ps-0 ps-md-3 mt-3 mt-md-0">
                       <h5>Como descartar?</h5>
                       <p>Saiba tudo sobre o descarte correto de cada tipo de material.</p>
-                      <a onclick="comoDescartar()" class="text-primary icon-move-right">
+                      <a onclick="mudaComoDescartar()" class="text-primary icon-move-right">
                         Veja mais
                         <i class="fas fa-arrow-right text-sm ms-1"></i>
                       </a>
@@ -274,7 +273,7 @@
                     <div class="ps-0 ps-md-3 mt-3 mt-md-0">
                       <h5>Fale com a cooperativa</h5>
                       <p>Entre em contato direto com a cooperativa e tire suas dúvidas.</p>
-                      <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit" class="text-primary icon-move-right">
+                      <a onclick="mudaContato()" class="text-primary icon-move-right">
                         Veja mais
                         <i class="fas fa-arrow-right text-sm ms-1"></i>
                       </a>
@@ -327,32 +326,38 @@
 
 
     <div class="section section-small section-get-started">
-        <div class="parallax filter">
-            <div class="image"
+        <div class="parallax">
+            <!-- <div class="image"
                 style="background-image: url('assets/img/office-1.jpeg')">
+            </div> -->
+            <div class="image"
+                style="background-color: #77937A;">
             </div>
             <div class="container">
                 <div class="title-area">
-                    <h2 class="text-white">Do you want to work with us?</h2>
-                    <div class="separator line-separator">♦</div>
-                    <p class="description"> We are keen on creating a second skin for anyone with a sense of style! We design our clothes having our customers in mind and we never disappoint!</p>
+                    <h2 class="text-white">Realize o descarte do seu residuo</h2>
+                    
+                    <p class="description"> ----------</p>
                 </div>
 
                 <div class="button-get-started">
-                    <a href="#gaia" class="btn btn-danger btn-fill btn-lg">Contact Us</a>
+                    <a onclick="realizarDescarte()" class="btn btn-danger btn-fill btn-lg">Realizar Descarte</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
     <footer class="footer footer-big footer-color-black" data-color="black">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-3">
+                <div class="col-md-6 col-sm-6">
                     <div class="info">
-                        <h5 class="title">Company</h5>
-                        <nav>
+                        <h5 class="title">Sobre nós</h5>
+
+                        <p>Ideia de projeto para o Hackathon organizado pela ABRE, Associação Brasileira de Embalagem, com o intuito de engajar o consumidor para a reciclagem. </p>
+                        <!-- <nav>
                             <ul>
                                 <li>
                                     <a href="#">Home</a></li>
@@ -369,76 +374,19 @@
                                     <a href="#">About Us</a>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav> -->
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-3">
+                
+                
+                <div style="float: right;" class="col-md-2 col-md-offset-1 col-sm-3">
                     <div class="info">
-                        <h5 class="title"> Help and Support</h5>
-                         <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">How it works</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms &amp; Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Company Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Money Back</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Latest News</h5>
+                        <h5 class="title">Veja o nosso código</h5>
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i> <b>Get Shit Done</b> The best kit in the market is here, just give it a try and let us...
-                                        <hr class="hr-small">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i> We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-2 col-md-offset-1 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Follow us on</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-facebook btn-simple">
-                                        <i class="fa fa-facebook-square"></i> Facebook
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-dribbble btn-simple">
-                                        <i class="fa fa-dribbble"></i> Dribbble
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-twitter btn-simple">
-                                        <i class="fa fa-twitter"></i> Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
-                                        <i class="fa fa-google-plus-square"></i> Google+
+                                    <a href="https://github.com/rayfrance/recicla-hack" class="btn btn-social btn-github btn-simple">
+                                        <i class="fa fa-github-square"></i> Repositório GitHub
                                     </a>
                                 </li>
                             </ul>
@@ -447,12 +395,8 @@
                 </div>
             </div>
             <hr>
-            <div class="copyright">
-                 © <script> document.write(new Date().getFullYear()) </script> Creative Tim, made with love
-            </div>
         </div>
     </footer>
-</div>
 </body>
 
 <!--   core js files    -->
@@ -481,5 +425,6 @@
 <script src="assets/js/login-register.js"></script>
 <script src="./assets/js/routes.js"></script>
 <script src="./assets/js/form-validation.js"></script>
+<script src="./assets/js/bootstrap-datepicker.js"></script>
 
 </html>
