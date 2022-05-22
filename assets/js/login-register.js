@@ -6,6 +6,8 @@
  * Web script: http://creative-tim.com
  * 
  */
+$("#pessoaLogada").hide();
+
 function showRegisterForm(){
     $('.loginBox').fadeOut('fast',function(){
         $('.registerBox').fadeIn('fast');
@@ -56,16 +58,16 @@ function loginAjax(){
     */
 
 /*   Simulate error message from the server   */
-     shakeModal();
+     mudaPessoaLogada();
 }
 
 function shakeModal(){
-    $('#loginModal .modal-dialog').addClass('shake');
-             $('.error').addClass('alert alert-danger').html("Email e senha não conferem");
-             $('input[type="password"]').val('');
-             setTimeout( function(){ 
-                $('#loginModal .modal-dialog').removeClass('shake'); 
-    }, 1000 ); 
+    // $('#loginModal .modal-dialog').addClass('shake');
+    //          $('.error').addClass('alert alert-danger').html("Email e senha não conferem");
+    //          $('input[type="password"]').val('');
+    //          setTimeout( function(){ 
+    //             $('#loginModal .modal-dialog').removeClass('shake'); 
+    // }, 1000 ); 
 }
 
    
