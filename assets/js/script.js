@@ -35,14 +35,26 @@ window.addEventListener('keyup', (e) => {
 
 function mostraPapel() {
   document.getElementById("showPapel").style.display = "block";
+  document.getElementById("showPlastico").style.display = "none";
+  document.getElementById("showMetal").style.display = "none";
+  document.getElementById("showVidro").style.display = "none";
 }
 function mostraPlastico() {
+  document.getElementById("showPapel").style.display = "none";
   document.getElementById("showPlastico").style.display = "block";
+  document.getElementById("showMetal").style.display = "none";
+  document.getElementById("showVidro").style.display = "none";
 }
 function mostraMetal() {
+  document.getElementById("showPapel").style.display = "none";
+  document.getElementById("showPlastico").style.display = "none";
   document.getElementById("showMetal").style.display = "block";
+  document.getElementById("showVidro").style.display = "none";
 }
 function mostraVidro() {
+  document.getElementById("showPapel").style.display = "none";
+  document.getElementById("showPlastico").style.display = "none";
+  document.getElementById("showMetal").style.display = "none";
   document.getElementById("showVidro").style.display = "block";
 }
 
