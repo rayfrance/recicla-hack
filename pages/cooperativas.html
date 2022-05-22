@@ -9,7 +9,7 @@
             <h2>Cooperativas</h2>
             <div class="separator separator-danger">✻</div>
             <p class="description">
-              Encontre a cooperativa mais prócima de você
+              Encontre a cooperativa mais próxima de você
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@
                             id="btnContato1"
                             data-toggle="modal"
                             href="javascript:void(0)"
-                            onclick="openLoginModal();"
+                           data-target="#modalChat"
                             >Entrar em contato</a
                           ><br /><br />
                           <a
@@ -94,7 +94,7 @@
                             id="btnContato2"
                             data-toggle="modal"
                             href="javascript:void(0)"
-                            onclick="openLoginModal();"
+                            data-target="#modalChat"
                             >Entrar em contato</a
                           ><br /><br />
                           <a
@@ -140,7 +140,7 @@
                             id="btnContato3"
                             data-toggle="modal"
                             href="javascript:void(0)"
-                            onclick="openLoginModal();"
+                            data-target="#modalChat"
                             >Entrar em contato</a
                           ><br /><br />
                           <a
@@ -186,7 +186,7 @@
                             id="btnContato4"
                             data-toggle="modal"
                             href="javascript:void(0)"
-                            onclick="openLoginModal();"
+                            data-target="#modalChat"
                             >Entrar em contato</a
                           ><br /><br />
                           <a
@@ -232,7 +232,7 @@
                             id="btnContato5"
                             data-toggle="modal"
                             href="javascript:void(0)"
-                            onclick="openLoginModal();"
+                            data-target="#modalChat"
                             >Entrar em contato</a
                           ><br /><br />
                           <a
@@ -278,7 +278,7 @@
                               id="btnContato6"
                               data-toggle="modal"
                               href="javascript:void(0)"
-                              onclick="openLoginModal();"
+                              data-target="#modalChat"
                               >Entrar em contato</a
                             ><br /><br />
                             <a
@@ -301,4 +301,25 @@
       </div>
     </div>
   </div>
+  <!-- Modal Chat -->
+  <div class="modal fade" id="modalChat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content fundoModal">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ranking</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <h3 class="title">Trajetória</h3>
+        
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+    </div>
+</div>
 </div>
