@@ -111,6 +111,24 @@ function mudaPessoaLogada(){
   $("#bodyClick").click();
 }
 
+
+function mostraRanking() {
+  document.getElementById("showRanking").style.display = "block";
+  document.getElementById("showTragetoria").style.display = "none";
+  document.getElementById("showFeedback").style.display = "none";
+  
+}
+function mostraTragetoria() {
+  document.getElementById("showRanking").style.display = "none";
+  document.getElementById("showTragetoria").style.display = "block";
+  document.getElementById("showFeedback").style.display = "none";
+  }
+function mostraFeedback() {
+  document.getElementById("showRanking").style.display = "none";
+  document.getElementById("showTragetoria").style.display = "none";
+  document.getElementById("showFeedback").style.display = "block";
+  }
+
 function mostraBtn1(){
   $('#btnContato1').show();
   $('#btnLocal1').show();
@@ -195,3 +213,4 @@ function mostraBtn6(){
   $('#btnContato6').show();
   $('#btnLocal6').show();
 }
+

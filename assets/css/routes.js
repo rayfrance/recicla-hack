@@ -38,3 +38,8 @@ function mudaContato(){
     $("#content").load("pages/contato.html");
 
 }
+
+function trocaTela() {
+    $("#content").load("pages/meuImpacto.html")
+    console.log("sjdfhjsdhf");
+}
