@@ -22,3 +22,7 @@ function mudaCadastroColetor(){
     $("#closeLogin").click();
     $("#bodyClick").click();
 }
+
+function realizarDescarte(){
+    $("#content").load("pages/realizarDescarte.html");
+}

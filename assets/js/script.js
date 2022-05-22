@@ -33,19 +33,6 @@ window.addEventListener('keyup', (e) => {
   });
 });
 
-function mostraPapel() {
-  document.getElementById("showPapel").style.display = "block";
-}
-function mostraPlastico() {
-  document.getElementById("showPlastico").style.display = "block";
-}
-function mostraMetal() {
-  document.getElementById("showMetal").style.display = "block";
-}
-function mostraVidro() {
-  document.getElementById("showVidro").style.display = "block";
-}
-
 function consultarCepAjax() {
   var cep = $('#cep').val();
   $.getJSON(`https://viacep.com.br/ws/${cep}/json/`, function (data, status) {
@@ -64,4 +51,30 @@ function consultarCepAjax() {
       console.log(error)
     }
   });
+}
+
+function mostraPapel2() {
+  document.getElementById("showPapel2").style.display = "block";
+  document.getElementById("showPlastico2").style.display = "none";
+  document.getElementById("showMetal2").style.display = "none";
+  document.getElementById("showVidro2").style.display = "none";
+
+}
+function mostraPlastico2() {
+  document.getElementById("showPapel2").style.display = "none";
+  document.getElementById("showPlastico2").style.display = "block";
+  document.getElementById("showMetal2").style.display = "none";
+  document.getElementById("showVidro2").style.display = "none";
+}
+function mostraMetal2() {
+  document.getElementById("showPapel2").style.display = "none";
+  document.getElementById("showPlastico2").style.display = "none";
+  document.getElementById("showMetal2").style.display = "block";
+  document.getElementById("showVidro2").style.display = "none";
+}
+function mostraVidro2() {
+  document.getElementById("showPapel2").style.display = "none";
+  document.getElementById("showPlastico2").style.display = "none";
+  document.getElementById("showMetal2").style.display = "none";
+  document.getElementById("showVidro2").style.display = "block";
 }
