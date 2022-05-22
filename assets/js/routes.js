@@ -3,7 +3,7 @@ function mudaCadastro(){
     $("#closeLogin").click();
 }
 
-function comoDescartar(){
+function mudaComoDescartar(){
     $("#content").load("pages/descartar.html");
 }
 
@@ -28,5 +28,16 @@ function realizarDescarte(){
 }
 function mudaSolicitarColeta(){
     $("#content").load("pages/solicitarColeta.html");
+
+}
+function mudaColetaAgendada(){
+    $("#content").load("pages/coletaAgendada.html");
+}
+function mudaCooperativas(){
+    $("#content").load("pages/cooperativas.html");
+
+}
+function mudaContato(){
+    $("#content").load("pages/contato.html");
 
 }
