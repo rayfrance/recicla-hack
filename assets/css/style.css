@@ -701,3 +701,8 @@ cursor: pointer;}
 .direct-chat-success .right>.direct-chat-text:after, .direct-chat-success .right>.direct-chat-text:before {
     border-left-color: #00a65a;
 }
+
+.cardRank{
+    display: grid;
+    justify-content: center;
+}
