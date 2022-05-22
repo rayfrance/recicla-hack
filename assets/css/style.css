@@ -167,3 +167,48 @@
 .btn-login{
     margin-top: 30px;
 }
+
+#btnLocal1{
+    display: none;
+}
+#btnLocal2{
+    display: none;
+}
+#btnLocal3{
+    display: none;
+}
+#btnLocal4{
+    display: none;
+}
+#btnLocal5{
+    display: none;
+}
+#btnLocal6{
+    display: none;
+}
+#btnContato1{
+    display: none;
+}
+#btnContato2{
+    display: none;
+}
+#btnContato3{
+    display: none;
+}
+#btnContato4{
+    display: none;
+}
+#btnContato5{
+    display: none;
+}
+#btnContato6{
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    #listCoo{
+        display: flex;
+    }
+}
+
+    
