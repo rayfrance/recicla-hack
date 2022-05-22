@@ -124,3 +124,11 @@
 .title-area{
     margin-bottom: 0px !important;
 }
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
