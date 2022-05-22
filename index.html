@@ -60,16 +60,16 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a onclick="mudaCooperativas()" target="_blank">Cooperativas</a>
+                        <a onclick="mudaCooperativas()" target="_blank" style="font-size: 15px;">Cooperativas</a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">Coletores</a>
+                        <a href="#" target="_blank" style="font-size: 15px;">Coletores</a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">Chat</a>
+                        <a href="#" target="_blank" style="font-size: 15px;">Chat</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px;">
                             <i class="fa fa-share-alt"></i> Compartilhar
                         </a>
                         <ul class="dropdown-menu dropdown-danger">
@@ -98,18 +98,15 @@
                     
                              <div class="modal fade login" id="loginModal">
                                   <div class="modal-dialog login animated">
-                                      <div class="modal-content">
+                                      <div class="modal-content" style="background-color:#77937A">
                                          <div class="modal-header">
                                             <button type="button" class="close" id="closeLogin" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title">Entrar com</h4>
+                                            <h4 class="modal-title" style="color:white ;">Entrar com</h4>
                                         </div>
                                         <div class="modal-body">
                                             <div class="box">
                                                  <div class="content">
                                                     <div class="social">
-                                                        <a class="circle github" href="#">
-                                                            <i class="fa fa-github fa-fw"></i>
-                                                        </a>
                                                         <a id="google_login" class="circle google" href="#">
                                                             <i class="fa fa-google-plus fa-fw"></i>
                                                         </a>
@@ -119,7 +116,7 @@
                                                     </div>
                                                     <div class="division">
                                                         <div class="line l"></div>
-                                                          <span>Ou</span>
+                                                          <span style="color:white ;">Ou</span>
                                                         <div class="line r"></div>
                                                     </div>
                                                     <div class="error"></div>
@@ -127,7 +124,7 @@
                                                         <form method="" action="" accept-charset="UTF-8">
                                                         <input id="email" class="form-control" type="text" placeholder="Email" name="email">
                                                         <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
-                                                        <input class="btn btn-default btn-login" type="button" value="Entrar" onclick="loginAjax()">
+                                                        <input style="background-color:#FE7F71;" class="btn btn-default btn-login" type="button" value="Entrar" onclick="loginAjax()">
                                                         </form>
                                                     </div>
                                                  </div>
@@ -148,13 +145,13 @@
                                         <div class="modal-footer">
                                             <div class="forgot login-footer">
                                                 <span>
-                                                    <a style="cursor: pointer;" onclick="mudaCadastro()">Criar uma conta</a>
+                                                    <a style="cursor: pointer; color: white;" onclick="mudaCadastro()">Criar uma conta</a>
                                                     </span> <br>
                                                 <span>
-                                                    <a style="cursor: pointer;" onclick="mudaCadastroCooperativa()">Cadastrar sua Cooperativa</a>
+                                                    <a style="cursor: pointer; color: white" onclick="mudaCadastroCooperativa()">Cadastrar sua Cooperativa</a>
                                                     </span> <br>
                                                 <span>
-                                                 <a style="cursor: pointer;" onclick="mudaCadastroColetor()">Cadastro como Coletor</a>
+                                                 <a style="cursor: pointer; color: white" onclick="mudaCadastroColetor()">Cadastro como Coletor</a>
                                             </span>
                                             </div>
                                             <div class="forgot register-footer" style="display:none">
@@ -255,7 +252,9 @@
                       </a>
                     </div>
                   </div>
+                  <hr>
                 </div>
+                
                 <div class="col-lg-4 px-lg-1 mt-lg-0 mt-4">
                   <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4 h-100">
                     <i class="material-icons text-gradient text-primary text-3xl">done_outline</i>
@@ -268,8 +267,9 @@
                       </a>
                     </div>
                   </div>
+                  <hr>
                 </div>
-            
+                
                 <div class="col-lg-4 mt-lg-0 mt-4">
                   <div class="info-horizontal bg-gray-100 border-radius-xl d-block d-md-flex p-4">
                     <i class="material-icons text-gradient text-primary text-3xl">contact_support</i>
@@ -283,7 +283,9 @@
                     </div>
   
                   </div>
+                 <hr> 
               </div>
+              
            </div>
           </div>
         <!-- <div class="container">
@@ -340,7 +342,7 @@
                 <div class="title-area">
                     <h2 class="text-white">Realize o descarte do seu residuo</h2>
                     
-                    <p class="description"> ----------</p>
+                    <p style="color: #454F41;" class="description"> Veja as opções disponíveis:</p>
                 </div>
 
                 <div class="button-get-started">

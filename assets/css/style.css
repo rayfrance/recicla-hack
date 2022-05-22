@@ -116,10 +116,10 @@
     display: contents;
 }
 
-.card-body{
+/* .card-body{
     padding: 20px 50px;
     margin-top: 20px;
-}
+} */
 
 .location{
     display: flex;
@@ -135,4 +135,25 @@
 
 .description{
     margin-bottom: 0px !important;
+}
+
+.posicaoCards{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1170px) {
+    .posicaoCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#email{
+    background-color: white;
+}
+#password{
+    background-color: white;
 }

@@ -1943,9 +1943,9 @@ pre code {
   .col-md-4 {
     width: 33.33333333%;
   }
-  .col-md-3 {
+  /* .col-md-3 {
     width: 25%;
-  }
+  } */
   .col-md-2 {
     width: 16.66666667%;
   }
