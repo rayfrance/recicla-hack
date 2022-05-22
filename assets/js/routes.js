@@ -41,3 +41,7 @@ function mudaContato(){
     $("#content").load("pages/contato.html");
 
 }
+function mudaMinhasContribuicoes(){
+    $("#content").load("pages/minhasContribuicoes.html");
+
+}
