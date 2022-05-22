@@ -165,9 +165,15 @@
 }
 
 .btn-login{
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 
-#showRanking #showFeedback #showTragetoria{
+#showRanking{
+    display: none;
+}
+#showTragetoria{
+    display: none;
+}
+#showFeedback{
     display: none;
 }

@@ -9,7 +9,6 @@
                   <div class="title-area">
                       <h2 style="color:white ;">Visualize seu impato através da RE-ciclo</h2>
                       
-                      <p class="description" style="color:#454F41">Escolha o tipo do material e veja as formas corretas de fazer o descarte.</p>
                   </div>
               </div>
 
@@ -17,9 +16,9 @@
                   <div class="row">
                       <div class="col-md-10 col-md-offset-1">
                           <div class="row posicaoCards">
-                              <div class="col-md-4">
+                              <div onclick="mostraRanking()" class="col-md-4">
                                   <div class="card card-member">
-                                      <a onclick="mostraRanking()">
+                                      
                                           <div class="content">
                                           <div class="avatar avatar-danger">
                                               <img alt="..." class="img-circle" src="assets/img/faces/face_1.jpg"/>
@@ -28,24 +27,25 @@
                                               <h3 class="title">Ranking</h3>
                                                   <ul id="showRanking" class="list-group list-group-flush">
                                                   <div class="card-body">
-                                                    <p>Veja sua pontução:</p>
+                                                    <p>Veja sua pontução de acordo com os seu histórico de descartes: </p>
                                                     </div>
                                                   <!-- <li class="list-group-item">Vestibulum at eros</li> -->
                                                 <div class="card-body">
-                                                  <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte">Visualizar</a>
+                                                    <button type="button" class="btn btn-primary btn-sm card-link btnDescarte" data-toggle="modal" data-target="#exampleModalCenter">
+                                                        Visualizar
+                                                      </button>
                                                 </div>
                                               </ul>  
                                                                                                  
                                                 
                                           </div>
-                                      </div>
-                                      </a>
-                                  </div>
+                                      </div>                                    
+                                  </div>                                  
                               </div>
                               
-                              <div class="col-md-4">
+                              <div onclick="mostraTragetoria()" class="col-md-4">
                                   <div class="card card-member">
-                                      <a onclick="mostraTragetoria()">
+                                      
                                           <div class="content">
                                               <div class="avatar avatar-danger">
                                                   <img alt="..." class="img-circle" src="assets/img/faces/face_3.jpg"/>
@@ -58,19 +58,19 @@
                                                       </div>
                                                       <!-- <li class="list-group-item">Vestibulum at eros</li> -->
                                                   <div class="card-body">
-                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Visualizar</a>
+                                                    <button type="button" class="btn btn-primary btn-sm card-link btnDescarte" data-toggle="modal" data-target="#exampleModalTrajetoria">
+                                                        Visualizar
+                                                      </button>
                                                   </div>
                                                   </ul>
                                               </div>
-                                          </div>
-                                      </a>
-                                      
+                                          </div>                                      
                                   </div>
                               </div>
-
-                              <div class="col-md-4">
+                                
+                              <div onclick="mostraFeedback()" class="col-md-4">
                                   <div class="card card-member">
-                                      <a onclick="mostraFeedback()">
+                                      
                                           <div class="content">
                                               <div class="avatar avatar-danger">
                                                   <img alt="..." class="img-circle" src="assets/img/faces/face_3.jpg"/>
@@ -79,20 +79,87 @@
                                                   <h3  class="title">Feedback</h3>
                                                   <ul id="showFeedback" class="list-group list-group-flush">
                                                       <div class="card-body">
-                                                          <p>Veja como as cooperativas estão avaliando o seu descarte:</p>
+                                                          <p>Veja como as cooperativas estão avaliando o seu descarte para a constante melhoria:</p>
                                                       </div>
                                                       <!-- <li class="list-group-item">Vestibulum at eros</li> -->
                                                   <div class="card-body">
-                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Visualizar</a>
+                                                    <button type="button" class="btn btn-primary btn-sm card-link btnDescarte" data-toggle="modal" data-target="#exampleModalFeedback">
+                                                        Visualizar
+                                                      </button>
                                                   </div>
                                                   </ul>
                                               </div>
                                           </div>
-                                      </a>
+                                      
                                       
                                   </div>
                               </div>
+                            
+                              <!-- Modal Ranking -->
+                              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Ranking</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="title">Ranking</h3>
+                                    
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
 
+                              <!-- Modal Trajetória -->
+                              <div class="modal fade" id="exampleModalTrajetoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Ranking</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="title">Trajetória</h3>
+                                    
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal Feedback -->
+                            <div class="modal fade" id="exampleModalFeedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Ranking</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="title">Feedback</h3>
+                                    
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                           </div>
                       </div>
                   </div>
