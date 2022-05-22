@@ -37,6 +37,10 @@ function mudaCooperativas(){
     $("#content").load("pages/cooperativas.html");
 
 }
+function mudaFaleComCooperativa(){
+    $("#content").load("pages/faleComCooperativa.html");
+
+}
 function mudaContato(){
     $("#content").load("pages/contato.html");
 
