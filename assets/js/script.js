@@ -102,6 +102,7 @@ function mostraVidro2() {
   document.getElementById("showPlastico2").style.display = "none";
   document.getElementById("showMetal2").style.display = "none";
   document.getElementById("showVidro2").style.display = "block";
+}
 
 function mudaPessoaLogada(){
     $('#btnLogin1').hide();

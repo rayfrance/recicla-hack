@@ -25,7 +25,7 @@ function mudaCadastroColetor(){
 
 function realizarDescarte(){
     $("#content").load("pages/realizarDescarte.html");
-
+}
 function mudaSolicitarColeta(){
     $("#content").load("pages/solicitarColeta.html");
 
