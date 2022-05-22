@@ -222,6 +222,8 @@ cursor: pointer;}
 @media screen and (min-width: 1200px) {
     #listCoo{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 .fundoModal{
