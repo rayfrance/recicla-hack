@@ -7,7 +7,7 @@
           <div class="content">
               <div class="row">
                   <div class="title-area">
-                      <h2 style="color:white ;">Selecione o material que deseja reciclar</h2>
+                      <h2 style="color:white ;">Visualize seu impato através da RE-ciclo</h2>
                       
                       <p class="description" style="color:#454F41">Escolha o tipo do material e veja as formas corretas de fazer o descarte.</p>
                   </div>
@@ -17,22 +17,22 @@
                   <div class="row">
                       <div class="col-md-10 col-md-offset-1">
                           <div class="row posicaoCards">
-                              <div class="col-md-3">
+                              <div class="col-md-4">
                                   <div class="card card-member">
-                                      <a onclick="mostraPapel2()">
+                                      <a onclick="mostraRanking()">
                                           <div class="content">
                                           <div class="avatar avatar-danger">
                                               <img alt="..." class="img-circle" src="assets/img/faces/face_1.jpg"/>
                                           </div>
                                           <div class="description">
-                                              <h3 class="title">Papel</h3>
-                                                  <ul id="showPapel2" class="list-group list-group-flush">
+                                              <h3 class="title">Ranking</h3>
+                                                  <ul id="showRanking" class="list-group list-group-flush">
                                                   <div class="card-body">
-                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte">Solicitar Retirada</a>
+                                                    <p>Veja sua pontução:</p>
                                                     </div>
                                                   <!-- <li class="list-group-item">Vestibulum at eros</li> -->
                                                 <div class="card-body">
-                                                  <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte">Ver pontos de descarte</a>
+                                                  <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte">Visualizar</a>
                                                 </div>
                                               </ul>  
                                                                                                  
@@ -42,46 +42,23 @@
                                       </a>
                                   </div>
                               </div>
-                              <div class="col-md-3">
+                              
+                              <div class="col-md-4">
                                   <div class="card card-member">
-                                      <a onclick="mostraPlastico2()">
-                                          <div class="content">
-                                              <div class="avatar avatar-danger">
-                                                  <img alt="..." class="img-circle" src="assets/img/faces/face_4.jpg"/>
-                                              </div>
-                                              <div class="description">
-                                                  <h3 class="title">Plástico</h3>
-                                                  <ul id="showPlastico2" class="list-group list-group-flush">
-                                                      <div class="card-body">
-                                                          <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Solicitar Retirada</a>
-                                                      </div>
-                                                      <!-- <li class="list-group-item">Vestibulum at eros</li> -->
-                                                  <div class="card-body">
-                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Ver pontos de descarte</a>
-                                                  </div>
-                                                  </ul>
-                                              </div>
-                                          </div>
-                                      </a>
-                                      
-                                  </div>
-                              </div>
-                              <div class="col-md-3">
-                                  <div class="card card-member">
-                                      <a onclick="mostraMetal2()">
+                                      <a onclick="mostraTragetoria()">
                                           <div class="content">
                                               <div class="avatar avatar-danger">
                                                   <img alt="..." class="img-circle" src="assets/img/faces/face_3.jpg"/>
                                               </div>
                                               <div class="description">
-                                                  <h3 class="title">Metal</h3>
-                                                  <ul id="showMetal2" class="list-group list-group-flush">
+                                                  <h3 class="title">Trajetória</h3>
+                                                  <ul id="showTragetoria" class="list-group list-group-flush">
                                                       <div class="card-body">
-                                                          <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Solicitar Retirada</a>
+                                                        <p>Veja as principais coorporativas que você está contribuindo:</p>
                                                       </div>
                                                       <!-- <li class="list-group-item">Vestibulum at eros</li> -->
                                                   <div class="card-body">
-                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Ver pontos de descarte</a>
+                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Visualizar</a>
                                                   </div>
                                                   </ul>
                                               </div>
@@ -91,22 +68,22 @@
                                   </div>
                               </div>
 
-                              <div class="col-md-3">
+                              <div class="col-md-4">
                                   <div class="card card-member">
-                                      <a onclick="mostraVidro2()">
+                                      <a onclick="mostraFeedback()">
                                           <div class="content">
                                               <div class="avatar avatar-danger">
                                                   <img alt="..." class="img-circle" src="assets/img/faces/face_3.jpg"/>
                                               </div>
                                               <div class="description">
-                                                  <h3  class="title">Vidro</h3>
-                                                  <ul id="showVidro2" class="list-group list-group-flush">
+                                                  <h3  class="title">Feedback</h3>
+                                                  <ul id="showFeedback" class="list-group list-group-flush">
                                                       <div class="card-body">
-                                                          <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Solicitar Retirada</a>
+                                                          <p>Veja como as cooperativas estão avaliando o seu descarte:</p>
                                                       </div>
                                                       <!-- <li class="list-group-item">Vestibulum at eros</li> -->
                                                   <div class="card-body">
-                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Ver pontos de descarte</a>
+                                                      <a onclick="" type="button"  class=" btn btn-primary btn-sm card-link btnDescarte"">Visualizar</a>
                                                   </div>
                                                   </ul>
                                               </div>

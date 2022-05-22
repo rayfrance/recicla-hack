@@ -110,3 +110,20 @@ function mudaPessoaLogada(){
   $("#closeLogin").click();
   $("#bodyClick").click();
 }
+
+function mostraRanking() {
+  document.getElementById("showRanking").style.display = "block";
+  document.getElementById("showTragetoria").style.display = "none";
+  document.getElementById("showFeedback").style.display = "none";
+  
+}
+function mostraTragetoria() {
+  document.getElementById("showRanking").style.display = "none";
+  document.getElementById("showTragetoria").style.display = "block";
+  document.getElementById("showFeedback").style.display = "none";
+  }
+function mostraFeedback() {
+  document.getElementById("showRanking").style.display = "none";
+  document.getElementById("showTragetoria").style.display = "none";
+  document.getElementById("showFeedback").style.display = "block";
+  }
