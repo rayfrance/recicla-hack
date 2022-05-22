@@ -77,7 +77,34 @@ function consultarCepAjax() {
     }
   });
 }
+
+function mostraPapel2() {
+  document.getElementById("showPapel2").style.display = "block";
+  document.getElementById("showPlastico2").style.display = "none";
+  document.getElementById("showMetal2").style.display = "none";
+  document.getElementById("showVidro2").style.display = "none";
+
+}
+function mostraPlastico2() {
+  document.getElementById("showPapel2").style.display = "none";
+  document.getElementById("showPlastico2").style.display = "block";
+  document.getElementById("showMetal2").style.display = "none";
+  document.getElementById("showVidro2").style.display = "none";
+}
+function mostraMetal2() {
+  document.getElementById("showPapel2").style.display = "none";
+  document.getElementById("showPlastico2").style.display = "none";
+  document.getElementById("showMetal2").style.display = "block";
+  document.getElementById("showVidro2").style.display = "none";
+}
+function mostraVidro2() {
+  document.getElementById("showPapel2").style.display = "none";
+  document.getElementById("showPlastico2").style.display = "none";
+  document.getElementById("showMetal2").style.display = "none";
+  document.getElementById("showVidro2").style.display = "block";
+
 function mudaPessoaLogada(){
     $('#btnLogin1').hide();
     $('#pessoaLogada').show();
+
 }
