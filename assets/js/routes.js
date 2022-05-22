@@ -57,6 +57,12 @@ function abrirChat(){
 function abrirConvidarAmigos(){
     $("#content").load("pages/convidarAmigos.html");
 }
+function mudaMinhasContribuicoes(){
+    $("#content").load("pages/minhasContribuicoes.html");
+}
+function mudaInfos(){
+    $("#content").load("pages/infos.html");
+}
 function mudaMeuImpacto(){
     $("#content").load("pages/meuImpacto.html");
 }

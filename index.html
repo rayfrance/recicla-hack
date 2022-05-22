@@ -60,13 +60,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a onclick="mudaCooperativas()" target="_blank" style="font-size: 15px;">Cooperativas</a>
+                        <a onclick="mudaCooperativas()"  style="font-size: 15px;">Cooperativas</a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" style="font-size: 15px;">Coletores</a>
+                        <a onclick="mudaInfos()" style="font-size: 15px;">Informações</a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" style="font-size: 15px;">Chat</a>
+                        <a href="#" style="font-size: 15px;">Chat</a>
                     </li>
                     <li class="dropdown">
                         <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px;">
@@ -81,6 +81,32 @@
                                 
                             </li>
                             
+                        </ul>
+                    </li>
+                <!-- botão de alguém que acabou de logar ( dropdown) -->
+                    <li id="pessoaLogada" style="color: white;" class="dropdown">
+                        <a style="color: white;font-size: 15px;" href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa" ></i> Maria
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="#"><span class="material-icons">star</span><i class="fa"></i> Pontuação </a>
+                            </li>
+                            <li>
+                                <a onclick="mudaMinhasContribuicoes()" href="#"><span class="material-icons">volunteer_activism</span><i class="fa"></i> Minhas contribuições</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
+                            </li>
+                            <li>
+                                <a href="whatsapp://send?text=<?php urlencode('Olá, vamos começar a reciclar? Visite o reciclahack')?>"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">verified_user</span><i class="fa"></i> Portal de Segurança</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">settings</span><i class="fa"></i> Configurações</a>
+                            </li>
                         </ul>
                     </li>
 
@@ -165,32 +191,6 @@
                         </div>
 
 
-                    </li>
-<!-- botão de alguém que acabou de logar ( dropdown) -->
-<li id="pessoaLogada" style="list-style-type: none;color: white;" class="dropdown col">
-                        <span style="color: white;float: right;" href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa" ></i> Maria
-                        </span>
-                        <ul class="dropdown-menu dropdown-danger">
-                            <li>
-                                <a onclick="mudaMeuImpacto()"><span class="material-icons">volunteer_activism</span><i class="fa"></i> Meu Impacto</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
-                            </li>
-                            <li>
-                                <a href="whatsapp://send?text=<?php urlencode('Olá, vamos começar a reciclar? Visite o reciclahack')?>"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">verified_user</span><i class="fa"></i> Portal de Segurança</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">settings</span><i class="fa"></i> Configurações</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-icons">info</span><i class="fa"></i> Informações</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             <!-- /.navbar-collapse -->
