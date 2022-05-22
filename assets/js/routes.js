@@ -60,3 +60,6 @@ function abrirConvidarAmigos(){
 function mudaMinhasContribuicoes(){
     $("#content").load("pages/minhasContribuicoes.html");
 }
+function mudaInfos(){
+    $("#content").load("pages/infos.html");
+}
