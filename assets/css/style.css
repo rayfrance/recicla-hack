@@ -709,3 +709,9 @@ cursor: pointer;}
 #contact-form{
     margin: 30px 30px;
 }
+.form-label{
+    margin-right: 12px;
+}
+.space{
+    margin-bottom: 10px !important;
+}
