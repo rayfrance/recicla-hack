@@ -104,7 +104,7 @@
 
 .contact{
     max-width: max-content;
-    display: flex;
+    display: contents !important;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -116,14 +116,10 @@
     display: contents;
 }
 
-.card-body{
+/* .card-body{
     padding: 20px 50px;
     margin-top: 20px;
-}
-
-.title-area{
-    margin-bottom: 0px !important;
-}
+} */
 
 .location{
     display: flex;
@@ -131,4 +127,43 @@
     align-content: center;
     justify-content: center;
     align-items: stretch;
+}
+
+.nomeCoo .materiaisCoo{
+    margin-bottom: 5px !important;
+}
+
+.description{
+    margin-bottom: 0px !important;
+}
+
+.posicaoCards{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1170px) {
+    .posicaoCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#email{
+    background-color: white;
+}
+#password{
+    background-color: white;
+}
+
+.btnDescarte{
+    background-color: #FE7F71;
+    color: white;
+    border: none;
+}
+
+.btn-login{
+    margin-top: 30px;
 }
