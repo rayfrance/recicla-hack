@@ -30,15 +30,8 @@ function mudaSolicitarColeta(){
     $("#content").load("pages/solicitarColeta.html");
 
 }
-function mudaColetaAgendada(){
-    $("#content").load("pages/coletaAgendada.html");
-}
 function mudaCooperativas(){
     $("#content").load("pages/cooperativas.html");
-
-}
-function mudaFaleComCooperativa(){
-    $("#content").load("pages/faleComCooperativa.html");
 
 }
 function mudaContato(){
@@ -46,23 +39,7 @@ function mudaContato(){
 
 }
 
-function abrirPontuacao(){
-    $("#content").load("pages/pontuacao.html");
-
-}
-function abrirChat(){
-    $("#content").load("pages/chat.html");
-
-}
-function abrirConvidarAmigos(){
-    $("#content").load("pages/convidarAmigos.html");
-}
-function mudaMinhasContribuicoes(){
-    $("#content").load("pages/minhasContribuicoes.html");
-}
-function mudaInfos(){
-    $("#content").load("pages/infos.html");
-}
-function mudaMeuImpacto(){
-    $("#content").load("pages/meuImpacto.html");
+function trocaTela() {
+    $("#content").load("pages/meuImpacto.html")
+    console.log("sjdfhjsdhf");
 }
