@@ -96,10 +96,6 @@
 
     }
 }
-
-.form-control{
-    font-size: 28px;
-}
     
 
 .contact{
@@ -706,12 +702,24 @@ cursor: pointer;}
     display: grid;
     justify-content: center;
 }
+
+
+.entrar1{
+    border-top: 3px solid #77937a;
+    background-color: #77937a;
+}
+
+.entrar2{
+    border-top: none;}
+
 #contact-form{
     margin: 30px 30px;
 }
+
 .form-label{
     margin-right: 12px;
 }
 .space{
     margin-bottom: 10px !important;
 }
+
