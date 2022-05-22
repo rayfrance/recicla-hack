@@ -104,7 +104,7 @@
 
 .contact{
     max-width: max-content;
-    display: flex;
+    display: contents !important;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -121,14 +121,18 @@
     margin-top: 20px;
 }
 
-.title-area{
-    margin-bottom: 0px !important;
-}
-
 .location{
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: stretch;
+}
+
+.nomeCoo .materiaisCoo{
+    margin-bottom: 5px !important;
+}
+
+.description{
+    margin-bottom: 0px !important;
 }
