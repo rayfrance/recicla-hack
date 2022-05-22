@@ -33,6 +33,31 @@ window.addEventListener('keyup', (e) => {
   });
 });
 
+function mostraPapel() {
+  document.getElementById("showPapel").style.display = "block";
+  document.getElementById("showPlastico").style.display = "none";
+  document.getElementById("showMetal").style.display = "none";
+  document.getElementById("showVidro").style.display = "none";
+}
+function mostraPlastico() {
+  document.getElementById("showPapel").style.display = "none";
+  document.getElementById("showPlastico").style.display = "block";
+  document.getElementById("showMetal").style.display = "none";
+  document.getElementById("showVidro").style.display = "none";
+}
+function mostraMetal() {
+  document.getElementById("showPapel").style.display = "none";
+  document.getElementById("showPlastico").style.display = "none";
+  document.getElementById("showMetal").style.display = "block";
+  document.getElementById("showVidro").style.display = "none";
+}
+function mostraVidro() {
+  document.getElementById("showPapel").style.display = "none";
+  document.getElementById("showPlastico").style.display = "none";
+  document.getElementById("showMetal").style.display = "none";
+  document.getElementById("showVidro").style.display = "block";
+}
+
 function consultarCepAjax() {
   var cep = $('#cep').val();
   $.getJSON(`https://viacep.com.br/ws/${cep}/json/`, function (data, status) {
@@ -77,4 +102,9 @@ function mostraVidro2() {
   document.getElementById("showPlastico2").style.display = "none";
   document.getElementById("showMetal2").style.display = "none";
   document.getElementById("showVidro2").style.display = "block";
+
+function mudaPessoaLogada(){
+    $('#btnLogin1').hide();
+    $('#pessoaLogada').show();
+
 }

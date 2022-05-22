@@ -40,7 +40,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
         <div class="container">
@@ -83,6 +82,35 @@
                             </li>
                         </ul>
                     </li>
+<!-- botão de alguém que acabou de logar ( dropdown) -->
+<li id="pessoaLogada" style="list-style-type: none;color: white;" class="dropdown">
+                        <a style="color: white;" href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa" ></i> Maria
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="#"><span class="material-icons">star</span><i class="fa"></i> Pontuação </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">volunteer_activism</span><i class="fa"></i> Minhas doações</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">verified_user</span><i class="fa"></i> Portal de Segurança</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">settings</span><i class="fa"></i> Configurações</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">info</span><i class="fa"></i> Informações</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
 
                         <!-- <a href="" class="btn btn-danger btn-fill">Entrar</a> -->
@@ -90,7 +118,7 @@
                             <div class="row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-4">
-                                     <a class="btn btn-danger btn-fill" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Entrar</a>                                
+                                     <a class="btn btn-danger btn-fill" id="btnLogin1" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Entrar</a>                                                                  
                                 <div class="col-sm-4"></div>
                             </div>
                     
@@ -169,7 +197,6 @@
 
                     </li>
                 </ul>
-            </div>
             <!-- /.navbar-collapse -->
         </div>
     </nav>
@@ -317,6 +344,7 @@
             </div>
         </div>
     </div>
+</div>
 
 
     <footer class="footer footer-big footer-color-black" data-color="black">
@@ -425,7 +453,6 @@
             </div>
         </div>
     </footer>
-</div>
 </body>
 
 <!--   core js files    -->

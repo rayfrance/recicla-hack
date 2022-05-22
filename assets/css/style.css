@@ -67,18 +67,3 @@
 #showVidro2{
     display: none;
 }
-
-.materiais{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-@media screen and (max-width: 768px) {
-    .materiais{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-}
-    
