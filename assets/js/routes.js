@@ -62,3 +62,6 @@ function mudaInfos(){
 function mudaMeuImpacto(){
     $("#content").load("pages/meuImpacto.html");
 }
+function mudaFAQ(){
+    $("#content").load("pages/faq.html");
+}
