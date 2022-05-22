@@ -22,3 +22,6 @@ function mudaCadastroColetor(){
     $("#closeLogin").click();
     $("#bodyClick").click();
 }
+function mudaSolicitarColeta(){
+    $("#content").load("pages/solicitarColeta.html");
+}

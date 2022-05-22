@@ -77,3 +77,7 @@ function consultarCepAjax() {
     }
   });
 }
+function mudaPessoaLogada(){
+    $('#btnLogin1').hide();
+    $('#pessoaLogada').show();
+}
