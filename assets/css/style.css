@@ -104,7 +104,7 @@
 
 .contact{
     max-width: max-content;
-    display: contents;
+    display: contents !important;
     flex-direction: column;
     align-content: center;
     justify-content: center;
