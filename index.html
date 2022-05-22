@@ -11,6 +11,8 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/bootstrap-datepicker.css">
     <!-- <link rel="stylesheet" href="assets/css/form-validation.css"> -->
     <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -68,18 +70,17 @@
                     </li>
                     <li class="dropdown">
                         <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-share-alt"></i> Share
+                            <i class="fa fa-share-alt"></i> Compartilhar
                         </a>
                         <ul class="dropdown-menu dropdown-danger">
                             <li>
-                                <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=bota o link do site aq"><i class="fa fa-facebook-square"></i> Facebook</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                                <a href="https://twitter.com/intent/tweet?url=[URL]&text=[TEXTO-DO-TWEET]&via=[NOME-DE-USUARIO-DO-TWITTER]&hashtags=[LISTA-DE-HASHTAGS]"><i class="fa fa-twitter"></i> Twitter</a>
+                                
                             </li>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
-                            </li>
+                            
                         </ul>
                     </li>
 <!-- botão de alguém que acabou de logar ( dropdown) -->
@@ -89,16 +90,16 @@
                         </a>
                         <ul class="dropdown-menu dropdown-danger">
                             <li>
-                                <a href="#"><span class="material-icons">star</span><i class="fa"></i> Pontuação </a>
+                                <a onclick="abrirPontuacao()" href="#"><span class="material-icons">star</span><i class="fa"></i> Pontuação </a>
                             </li>
                             <li>
                                 <a href="#"><span class="material-icons">volunteer_activism</span><i class="fa"></i> Minhas doações</a>
                             </li>
                             <li>
-                                <a href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
+                                <a onclick="abrirChat()" href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
                             </li>
                             <li>
-                                <a href="#"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
+                                <a onclick="abrirConvidarAmigos()" href="#"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
                             </li>
                             <li>
                                 <a href="#"><span class="material-icons">verified_user</span><i class="fa"></i> Portal de Segurança</a>
@@ -108,13 +109,14 @@
                             </li>
                             <li>
                                 <a href="#"><span class="material-icons">info</span><i class="fa"></i> Informações</a>
+
                             </li>
                         </ul>
                     </li>
                     <li>
 
                         <!-- <a href="" class="btn btn-danger btn-fill">Entrar</a> -->
-                        <div class="container fa">
+                        <div class="container fa col-6">
                             <div class="row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-4">
@@ -195,6 +197,35 @@
                         </div>
 
 
+                    </li>
+<!-- botão de alguém que acabou de logar ( dropdown) -->
+<li id="pessoaLogada" style="list-style-type: none;color: white;" class="dropdown col">
+                        <span style="color: white;float: right;" href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa" ></i> Maria
+                        </span>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="#"><span class="material-icons">star</span><i class="fa"></i> Pontuação </a>
+                            </li>
+                            <li>
+                                <a onclick="mudaMinhasContribuicoes()" href="#"><span class="material-icons">volunteer_activism</span><i class="fa"></i> Minhas contribuições</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">chat</span><i class="fa"></i>Chat</a>
+                            </li>
+                            <li>
+                                <a href="whatsapp://send?text=<?php urlencode('Olá, vamos começar a reciclar? Visite o reciclahack')?>"><span class="material-icons">person_add</span><i class="fa"></i> Convidar amigos</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">verified_user</span><i class="fa"></i> Portal de Segurança</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">settings</span><i class="fa"></i> Configurações</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">info</span><i class="fa"></i> Informações</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             <!-- /.navbar-collapse -->
@@ -353,10 +384,12 @@
     <footer class="footer footer-big footer-color-black" data-color="black">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-3">
+                <div class="col-md-6 col-sm-6">
                     <div class="info">
-                        <h5 class="title">Company</h5>
-                        <nav>
+                        <h5 class="title">Sobre nós</h5>
+
+                        <p>Ideia de projeto para o Hackathon organizado pela ABRE, Associação Brasileira de Embalagem, com o intuito de engajar o consumidor para a reciclagem. </p>
+                        <!-- <nav>
                             <ul>
                                 <li>
                                     <a href="#">Home</a></li>
@@ -373,76 +406,19 @@
                                     <a href="#">About Us</a>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav> -->
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-3">
+                
+                
+                <div style="float: right;" class="col-md-2 col-md-offset-1 col-sm-3">
                     <div class="info">
-                        <h5 class="title"> Help and Support</h5>
-                         <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">How it works</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms &amp; Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Company Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Money Back</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Latest News</h5>
+                        <h5 class="title">Veja o nosso código</h5>
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i> <b>Get Shit Done</b> The best kit in the market is here, just give it a try and let us...
-                                        <hr class="hr-small">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i> We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-2 col-md-offset-1 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Follow us on</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-facebook btn-simple">
-                                        <i class="fa fa-facebook-square"></i> Facebook
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-dribbble btn-simple">
-                                        <i class="fa fa-dribbble"></i> Dribbble
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-twitter btn-simple">
-                                        <i class="fa fa-twitter"></i> Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
-                                        <i class="fa fa-google-plus-square"></i> Google+
+                                    <a href="https://github.com/rayfrance/recicla-hack" class="btn btn-social btn-github btn-simple">
+                                        <i class="fa fa-github-square"></i> Repositório GitHub
                                     </a>
                                 </li>
                             </ul>
@@ -451,9 +427,6 @@
                 </div>
             </div>
             <hr>
-            <div class="copyright">
-                 © <script> document.write(new Date().getFullYear()) </script> Creative Tim, made with love
-            </div>
         </div>
     </footer>
 </body>
@@ -484,5 +457,6 @@
 <script src="assets/js/login-register.js"></script>
 <script src="./assets/js/routes.js"></script>
 <script src="./assets/js/form-validation.js"></script>
+<script src="./assets/js/bootstrap-datepicker.js"></script>
 
 </html>

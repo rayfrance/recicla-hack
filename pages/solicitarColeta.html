@@ -1,1 +1,27 @@
-<h3 class="title">Solicitar coleta</h1>
+<div class="section section-our-team-freebie">
+    <div class="parallax filter filter-color-black">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="title-area solicitarColeta">
+                        <h1 class="title">Solicitar coleta</h1>
+                        <h2>O que você quer reciclar?</h2>
+                        <div class="separator separator-danger">✻</div>
+                        <p style="color: white;" class="description">Selecione uma data para a coleta.</p>
+                        <input type="date" style="color:black" name="" id="dataColeta">
+                        <input type="time" style="color:black" id="horaColeta" name="appt">
+                    </div>
+                    <div class="title-area">
+                        <label for="country" class="form-label">Selecione um endereço para coleta.</label>
+                        <select style="width: auto; margin-left: auto;margin-right: auto;" class="form-select form-control" id="country" required>
+                            <option value="">Escolha uma opção...</option>
+                            <option>Endereço registrado</option>
+                            <option>Adicionar outro endereço</option>     
+                        </select>
+                    </div>
+                    <button class="btn btn-danger btn-fill" type="submit" onclick="mudaColetaAgendada()">Agendar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
