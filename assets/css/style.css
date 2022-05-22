@@ -706,3 +706,6 @@ cursor: pointer;}
     display: grid;
     justify-content: center;
 }
+#contact-form{
+    margin: 30px 30px;
+}
