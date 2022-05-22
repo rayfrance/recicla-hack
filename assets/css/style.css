@@ -226,3 +226,23 @@ cursor: pointer;}
 }
 
 
+.fundoModal{
+    background-color: #3f4e41;
+}
+
+.feedbackBt{
+    margin-right: 5px;
+}
+
+.colModal{
+    display: flex;
+    justify-content: center;    
+    flex-wrap:wrap ;
+    align-content: center;
+    width: 100%;
+}
+
+.alinhaTragetoria{
+    display: block;
+}
+
