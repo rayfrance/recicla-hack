@@ -67,3 +67,19 @@
 #showVidro2{
     display: none;
 }
+.contact{
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.contact2 {
+    display: contents;
+}
+
+.card-body{
+    padding: 20px;
+}
