@@ -224,6 +224,26 @@ cursor: pointer;}
         display: flex;
     }
 }
+.fundoModal{
+    background-color: #3f4e41;
+}
+
+.feedbackBt{
+    margin-right: 5px;
+}
+
+.colModal{
+    display: flex;
+    justify-content: center;    
+    flex-wrap:wrap ;
+    align-content: center;
+    width: 100%;
+}
+
+.alinhaTragetoria{
+    display: block;
+}
+
 .box {
     position: relative;
     border-radius: 3px;
@@ -681,4 +701,3 @@ cursor: pointer;}
 .direct-chat-success .right>.direct-chat-text:after, .direct-chat-success .right>.direct-chat-text:before {
     border-left-color: #00a65a;
 }
-                                    
