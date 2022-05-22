@@ -105,7 +105,8 @@ function mostraVidro2() {
 }
 
 function mudaPessoaLogada(){
-    $('#btnLogin1').hide();
-    $('#pessoaLogada').show();
-
+  $('#btnLogin1').hide();
+  $('#pessoaLogada').show();
+  $("#closeLogin").click();
+  $("#bodyClick").click();
 }

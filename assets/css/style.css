@@ -99,6 +99,8 @@
 
 .form-control{
     font-size: 28px;
+}
+    
 
 .contact{
     max-width: max-content;
@@ -108,12 +110,25 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    margin-top: 50px !important;
 }
 .contact2 {
     display: contents;
 }
 
 .card-body{
-    padding: 20px;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
 
+.title-area{
+    margin-bottom: 0px !important;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
 }
