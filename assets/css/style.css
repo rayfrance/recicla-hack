@@ -165,8 +165,12 @@
 }
 
 .btn-login{
-    margin-top: 30px !important;
+margin-top: 30px !important;
 }
+
+.navbar-collapse a{
+cursor: pointer;}
+   
 
 #showRanking{
     display: none;
@@ -220,4 +224,5 @@
         display: flex;
     }
 }
+
 
