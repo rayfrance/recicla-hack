@@ -1,3 +1,7 @@
+/* .parallax{
+    height: 70vh !important;
+} */
+
 .input-group{
     display: flex;
     flex-direction:row;
